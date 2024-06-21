@@ -71,6 +71,7 @@
       @apply border-border;
     }
     body {
-      @apply bg-black text-white;
+      background: url("/bg.png");
+      background-size: 100%;
     }
   }

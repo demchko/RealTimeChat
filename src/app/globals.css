@@ -72,6 +72,6 @@
     }
     body {
       background: url("/bg.png");
-      background-size: 100%;
+      background-size: 100% 100%;
     }
   }

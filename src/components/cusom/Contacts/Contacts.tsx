@@ -1,11 +1,10 @@
-import { Input } from "@/components/ui/input"
 import { ContactsList } from "./ContactsList"
+import { CustomInput } from "../CustomInput"
 
 export const Contacts = () => {
     return (
-        <div className="my-7 overflow-y-scroll h-full" >
-            <Input placeholder="Search..." className="bg-transparent" />
-            <ContactsList />
+        <div className="my-7 overflow-y-auto h-full" >
+            <CustomInput placeholder="Search" />
             <ContactsList />
         </div>
     )

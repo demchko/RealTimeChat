@@ -1,7 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 import { Notebook, Video } from "lucide-react"
+import { CustomInput } from "../CustomInput"
 
 export const UserMessage = () => {
     return (
@@ -18,8 +18,14 @@ export const UserMessage = () => {
                     <Button variant="ghost" size="icon" ><Notebook /></Button>
                 </div>
             </div>
+            {/* main block of messages */}
+            <div className="w-full h-full overflow-y-auto px-4 py-2" >
+                <div className="bg-gray-900 p-3 rounded-2xl flex justify-center inline-block max-w-[50%]" >
+                    <p>Hello</p>
+                </div>
+            </div>
             <div className="flex border-t border-gray-500 p-5" >
-                <Input placeholder="Send a message" className="bg-gray-900 border-none p-3" />
+                <CustomInput placeholder="Send a message" />
                 <Button>Send</Button>
             </div>
         </div>
